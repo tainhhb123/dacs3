@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidCosmetics</string>
+    <string name="slogan">Enhance your natural beauty with our cosmetic wonders!</string>
+    <!--    <string name="slogan"> smetic wonders!</string>-->
+    <string name="product_price">Product price</string>
+    <string name="toolbar_skincare">Skin Care</string>
+    <string name="toolbar_makeup">Make Up</string>
+    <string name="title_activity_information">InformationActivity</string>
+
+</resources>

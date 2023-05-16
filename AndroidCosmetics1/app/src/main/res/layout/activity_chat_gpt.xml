@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChatGPT">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_counselors"
+        android:background="#54CE59"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COUNSELORS"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:gravity="center" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_chatgpt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/toolbar_counselors"
+        android:paddingTop="0dp"
+
+        />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_centerInParent="true"
+        android:text="Q&amp;A here"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        >
+
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounded_corner"
+            android:hint="Write here"
+            android:padding="16dp"
+            android:layout_toLeftOf="@id/send_btn"
+            />
+
+        <ImageButton
+            android:id="@+id/send_btn"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="1dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/ic_baseline_send_24"
+
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

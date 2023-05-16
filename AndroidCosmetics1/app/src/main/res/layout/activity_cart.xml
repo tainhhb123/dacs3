@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CartActivity"
+    android:weightSum="10">
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/white"
+        app:title="Cart"
+        android:id="@+id/toolbar_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textview_notification"
+                android:layout_gravity="center"
+                android:text="Cart null"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <ListView
+                android:id="@+id/listview_cart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="20sp"
+                android:text="Total payment"
+                android:textColor="#033B8E"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textviewtotalpayment"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:text="Price"
+                    android:textColor="#033B8E"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+    <Button
+        android:id="@+id/button_payment"
+        android:layout_weight="1"
+        android:text="Payment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </Button>
+    <Button
+        android:id="@+id/button_continue_purchase"
+        android:layout_weight="1"
+        android:text="Continue shopping"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProductDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_productdetails"
+        app:title="Product Details"
+        app:titleTextColor="#4CAF50"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgview_productdetails"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="10dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textview_productdetails_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="TanTai"
+                android:layout_marginLeft="10dp"
+                android:textColor="#4CAF50"/>
+            <TextView
+                android:id="@+id/textview_productdetails_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="200 $"
+                android:layout_marginLeft="10dp"
+                android:textColor="#CA0D0D"/>
+            <Spinner
+                android:id="@+id/spinner"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:background="@drawable/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+            </Spinner>
+            <Button
+                android:id="@+id/button_add_cart"
+                android:textSize="15sp"
+                android:text="Add to Cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Details"
+            android:textSize="20dp"
+            android:textColor="#4CAF50"
+            android:textStyle="bold|italic"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview_describe_pd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:textColor="#4CAF50"/>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
